@@ -25,6 +25,7 @@ p{
     --notify-color:#DE0000;
     --border-color:#DBDBDB;
     --light-font-color:#9C9C9C;
+    --input-bg-color:#EFEFEF;
     /* font size */
     --e-large-font-size:30px;
     --large-font-size:18px;
@@ -330,4 +331,67 @@ font-weight: var(--mid-weight);
     background-color: var(--theme-white-color);
     color: var(--main-theme-color);
     font-size: var(--font-size-14);
+}
+
+.popup-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    background-color: #002C5F80;
+    z-index: 99;
+    display: none;
+}
+.popup-edit{
+    max-width: 500px;
+    background-color: var(--theme-white-color);
+    width: 500px;
+    padding: 30px;
+}
+.input-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+.input-boc input{
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+}
+.input-boc input[type="file"]{
+    display: none;
+}
+.input-boc label{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.input-boc label::after{
+    content: 'Browse';
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    height: 100%;
+    background-color:var(--input-bg-color) ;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.submit-box input[type="submit"]{
+    padding: 8px 30px;
+    background-color: var(--main-theme-color);
+    color: var(--theme-white-color);
+    overflow:none;
+    border: none;
+    border-radius: 5px;
 }
