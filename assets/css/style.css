@@ -103,6 +103,8 @@ p{
     background: transparent;
     font-size:var(--middle-font-size) ;
     width: 92%;
+    font-weight: var(--e-light-weight);
+    color: #AFAFAF;
 }
 
 .search_input img{
@@ -286,4 +288,46 @@ font-size: var(--font-size-14);
    background-color: var(--border-color);
    top: 0;
    right: 0;
+}
+.anual-report .search_input{
+    background-color: var(--theme-white-color);
+}
+
+.anual-report .col-6 p{
+    font-size: var(--middle-font-size);
+    font-weight: var(--light-weight);
+}
+
+.anual-report-table-head .col{
+font-size: var(--small-font-size);
+font-weight: var(--mid-weight);
+}
+.table-icons img{
+    width: 15px;
+    height: 15px;
+}
+.anual-report-table-data{
+    padding: 14px;
+    background: var(--theme-white-color);
+}
+.anual-report-table-data .col{
+    font-size: var(--middle-font-size);
+}
+.col img{
+    width: 15px;
+    height: 15px;
+}
+.footer_pagination a.page-link{
+    border: none;
+    background-color: transparent;
+    background-color: transparent;
+    color: var(--main-theme-color);
+    font-size: var(--font-size-14);
+}
+.footer_pagination span.page-link{
+    border: none;
+    background-color: transparent;
+    background-color: var(--theme-white-color);
+    color: var(--main-theme-color);
+    font-size: var(--font-size-14);
 }
