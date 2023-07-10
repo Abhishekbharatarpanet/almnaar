@@ -9,15 +9,21 @@ font-family: 'Inter', sans-serif;
 ul{
     padding-left: 0;
 }
+
 p{
     padding-bottom: 0;
     font-weight: var(--e-light-weight);
 }
+
 :root{
     --main-theme-color: #002C5F;
     --sec-theme-color:#F1F5F9;
     --theme-white-color:#FFFFFF;
     --rare-font-color:#002C5F;
+    --search-box-bg:#E3E9EF;
+    --notify-color:#DE0000;
+    --border-color:#DBDBDB;
+    /* font size */
     --e-large-font-size:30px;
     --large-font-size:18px;
     --middle-font-size:12px;
@@ -30,20 +36,25 @@ p{
     --e-bold-weight:700;
 
 }
+
 .row{
     margin: 0 0;
 }
+
 .navigation_list ul li.active a{
     background-color:var(--theme-white-color);
     color:var( --rare-font-color) !important;
     border-radius: 5px;
 }
+
 .main_section{
     background-color: var(--main-theme-color);
 }
+
 .navigation_list ul li{
     list-style: none;
 }
+
 .navigation_list ul li a{
     color: var(--theme-white-color);
     display: flex;
@@ -58,6 +69,67 @@ p{
     width: 15px;
     height: 15px;
 }
+
 .main_content{
     background-color: var( --sec-theme-color);
+    margin-right: 20px;
+    padding: 20px;
+    border-radius:20px 20px 0px 0px;
+}
+
+.slide_bar .img_logo img{
+    width: 100%;
+}
+
+.main_content h1{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: var(--mid-weight);
+    margin-top: 15px;
+}
+.searchbar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.search_input input[type="search"]{
+    border: none;
+    outline: none;
+    height: 32px;
+    background: transparent;
+    font-size:var(--middle-font-size) ;
+    width: 92%;
+}
+
+.search_input img{
+    width: 13px;
+    height: 13px;
+}
+.search_input{
+    background-color:var( --search-box-bg) ;
+    padding: 0 10px;
+    border-radius: 5px;
+    min-width: 70%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.profile .notify{
+    position: relative;
+}
+.profile .notify::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    background-color: var( --notify-color);
+    border-radius: 50%;
+}
+.page_title{
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
 }
