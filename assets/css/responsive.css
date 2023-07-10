@@ -1,0 +1,20 @@
+@media (max-width: 1365px){
+.navigation_list ul li a span{
+    
+display: none;
+}
+.navigation_list ul li a img{
+    width: 30px;
+    height: 30px;
+}
+.responsive-sidebar{
+    width: fit-content;
+    max-width: 50px;
+}
+.left-bar .col-10{
+    width: 95%;
+}
+.navigation_list ul li.active a{
+    background-color: transparent;
+}
+}
