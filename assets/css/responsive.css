@@ -18,3 +18,41 @@ display: none;
     background-color: transparent;
 }
 }
+@media (max-width: 1000px){
+    .left-bar .col-10{
+        width: 92%;
+        
+    }
+    .main_content{
+        margin-right: 0;
+    }
+    .columm-sm{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .columm-sm > div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px){
+    .left-bar .col-10{
+        width: 90%;
+    }
+}
+
+@media (max-width: 501px){
+    .left-bar .col-10{
+        width: 87%;
+    }
+}
+@media (max-width: 375px){
+    .left-bar .col-10{
+        width: 85%;
+    }
+}
+@media (max-width: 330px){
+    .left-bar .col-10{
+        width: 82%;
+    }
+}

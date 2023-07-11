@@ -375,6 +375,9 @@ font-weight: var(--mid-weight);
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    line-height: 35px;
+    font-size: var(--middle-font-size);
+    padding-inline-start: 10px;
 }
 .input-boc label::after{
     content: 'Browse';
@@ -386,6 +389,7 @@ font-weight: var(--mid-weight);
     display: flex;
     align-items: center;
     padding: 0 10px;
+    top:0
 }
 .submit-box input[type="submit"]{
     padding: 8px 30px;
@@ -394,4 +398,8 @@ font-weight: var(--mid-weight);
     overflow:none;
     border: none;
     border-radius: 5px;
+}
+
+.notification_icon > ul.dropdown-menu{
+    left: -90px !important;
 }

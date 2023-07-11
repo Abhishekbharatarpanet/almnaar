@@ -1,6 +1,23 @@
-let close_btn = document.getElementById('close-btn');
-let popup =document.querySelector('.popup-overlay');
+$( document ).ready(function() {
+  
+ $(":file").on("change", function(e){
+  
+    console.log(e)
+ 
+  let get_att = e.currentTarget.id;
 
-close_btn.addEventListener('click',function(){
-    popup.style.display = 'none';
-})
+  $(`[for=${get_att}]`).html(this.files[0].name);
+  
+ });
+
+
+
+ $('.edit_btn').on('click',function(){
+    $('.popup-overlay').css('display', 'flex');
+ });
+
+ $('.close-btn').on('click',function(){
+    $('.popup-overlay').hide();
+ });
+    
+});
