@@ -26,13 +26,16 @@ p{
     --border-color:#DBDBDB;
     --light-font-color:#9C9C9C;
     --input-bg-color:#EFEFEF;
+    
     /* font size */
     --e-large-font-size:30px;
+    --font-20px:20px;
     --large-font-size:18px;
-    --middle-font-size:12px;
-    --small-font-size:10px;
+    --middle-font-size:14px;
+    --small-font-size:12px;
     --font-size-14:14px;
     --font-size-6:6px;
+
     /*  font weight */ 
     --e-light-weight:300;
     --light-weight:400;

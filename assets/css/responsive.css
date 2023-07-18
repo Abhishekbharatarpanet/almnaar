@@ -1,7 +1,20 @@
 @media (max-width: 1365px){
+    .notification_icon > ul.dropdown-menu{
+        left: unset !important;
+    }
+    .slide_bar .img_logo img {
+        width: 100%;
+        position: absolute;
+        top: 2px;
+        width: 150px;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-85px);
+    }
 .navigation_list ul li a span{
     
 display: none;
+
 }
 .navigation_list ul li a img{
     width: 30px;
@@ -10,8 +23,9 @@ display: none;
 .responsive-sidebar{
     width: fit-content;
     max-width: 50px;
+    padding: 0;
 }
-.left-bar .col-10{
+.left-bar > .col-10{
     width: 95%;
 }
 .navigation_list ul li.active a{
@@ -19,7 +33,7 @@ display: none;
 }
 }
 @media (max-width: 1000px){
-    .left-bar .col-10{
+    .left-bar > .col-10{
         width: 92%;
         
     }
@@ -35,24 +49,88 @@ display: none;
     }
 }
 
+@media (max-width: 990px){
+    .popup-edit{
+        max-width: 350px;
+    background-color: var(--theme-white-color);
+    width: 80%;
+    padding: 30px;
+    /* height: 500px; */
+    }
+    .input-form form{
+        gap: 10px 0;
+    }
+    .popup-edit p{
+        font-size: 14px;
+    }
+    .beetween_borders:nth-child(2)::before,.beetween_borders:nth-child(2)::after{
+        display: none;
+    }
+    .beetween_borders{
+        padding: 0 0;
+    }
+    .date_box {
+    width: 40px;
+    }
+.beetween_borders .mt-5{
+    margin-top: 10px !important;
+}
+.main_content_section > .row.mt-5{
+    gap: 30px 0;
+}
+.search_input input[type="search"]{
+    width: 85%;
+}
+}
 @media (max-width: 630px){
-    .left-bar .col-10{
+    .left-bar > .col-10{
         width: 90%;
+    }
+    .main_content .page_title .row{
+        gap: 20px 0;
+        flex-wrap: wrap;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+    .col-sm-8{
+        width: 66.66666667%;
+    }
+    .col-sm-4{
+        width: 33.33333333%;
+    }
+    .columm-sm .col-md-6.col-lg-8 div.row{
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+    .abslute_background{
+        width: 50%;
+    }
+    .dashboard-card{
+        height: 100%;
+        padding: 12px 10px;
+    }
+    .abslute_background::after{
+        display: none;
+    }
+    .dashboard-card h2{
+        font-size: var(--font-20px);
+        font-size: var(--small-font-size);
     }
 }
 
 @media (max-width: 501px){
-    .left-bar .col-10{
+    .left-bar > .col-10{
         width: 87%;
     }
 }
 @media (max-width: 375px){
-    .left-bar .col-10{
+    .left-bar > .col-10{
         width: 85%;
     }
 }
 @media (max-width: 330px){
-    .left-bar .col-10{
+    .left-bar > .col-10{
         width: 82%;
     }
 }
