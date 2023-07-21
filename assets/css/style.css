@@ -26,11 +26,12 @@ p{
     --border-color:#DBDBDB;
     --light-font-color:#9C9C9C;
     --input-bg-color:#EFEFEF;
-    
+
     /* font size */
     --e-large-font-size:30px;
     --font-20px:20px;
     --large-font-size:18px;
+    --font-16px:16px;
     --middle-font-size:14px;
     --small-font-size:12px;
     --font-size-14:14px;
@@ -124,7 +125,8 @@ p{
 .profile{
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:end;
+    gap: 20px;
 }
 .profile .notify{
     position: relative;
@@ -403,6 +405,51 @@ font-weight: var(--mid-weight);
     border-radius: 5px;
 }
 
+.notification_header{
+    position: sticky;
+    top: 0;
+    background-color: var(--main-theme-color);
+}
+
+.notification_header a:hover{
+    font-size: var(--small-font-size);
+    color: var(--theme-white-color);
+    background-color: transparent;
+}
+
 .notification_icon > ul.dropdown-menu{
-    left: -90px !important;
+    /* left: -90px !important; */
+    max-height: 300px;
+    overflow-y: scroll;
+    padding-top: 0;
+    max-width: 300px;
+    overflow-x: hidden;
+}
+.notification_icon > ul.dropdown-menu li a p{
+    font-size: var(--font-size-14);
+}
+
+.notification_header a span, .notification_header a span a{
+    font-size: var(--small-font-size);
+    color: var(--theme-white-color);
+}
+
+.profile_photo > ul.dropdown-menu{
+    /* left: -90px !important; */
+    max-height: 300px;
+    overflow-y: scroll;
+    padding-top: 0;
+    max-width: 300px;
+    overflow-x: hidden;
+}
+
+.profile_photo  > ul.dropdown-menu li a p{
+    font-size: var(--font-size-14);
+}
+
+.profile_photo ul li a i{
+    width: 20px;
+    /* border: 1px solid; */
+    text-align: center;
+    font-size: var(--font-16px)
 }
