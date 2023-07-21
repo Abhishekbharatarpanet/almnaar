@@ -304,7 +304,9 @@ font-size: var(--font-size-14);
     font-size: var(--middle-font-size);
     font-weight: var(--light-weight);
 }
-
+.anual-report-table-head{
+    padding: 0 14px;
+}
 .anual-report-table-head .col{
 font-size: var(--small-font-size);
 font-weight: var(--mid-weight);
@@ -453,4 +455,11 @@ font-weight: var(--mid-weight);
     /* border: 1px solid; */
     text-align: center;
     font-size: var(--font-16px)
+}
+
+.lang_changer{
+    background: transparent;
+    border: 1px solid var(--main-theme-color);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
